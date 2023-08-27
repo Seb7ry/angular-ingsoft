@@ -9,6 +9,7 @@ import { AboutComponent } from './components/about/about.component';
 
 import { DevopsService } from "./services/devops.service";
 import { DevComponent } from './components/dev/dev.component';
+import { TarjetaComponent } from './components/tarjeta/tarjeta.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DevComponent } from './components/dev/dev.component';
     NavbarComponent,
     HomeComponent,
     AboutComponent,
-    DevComponent
+    DevComponent,
+    TarjetaComponent
   ],
   imports: [
     BrowserModule,
