@@ -4,3 +4,18 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.imagen-con-pie {
+    text-align: center; 
+  }
+  
+  .imagen-con-pie img {
+    max-width: 100%;
+  }
+  
+  .imagen-con-pie figcaption {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+  }
+  
