@@ -24,7 +24,7 @@
             </p> 
         </div>
         <div class="col-md-6">
-            <figure class="imagen-con-pie">
+            <figure class="imagen-con-pie animated fadeIn">
                 <img src="../assets/img/process.png" alt="Descripción de la imagen img-fluid img">
                 <figcaption>Diagrama de la metodología DevOps</figcaption>
               </figure>
@@ -35,12 +35,12 @@
     <h2 class="display-4 animated fadeIn fast">Pasos para el desarrollo DevOps</h2>
     <hr>
     <div class="card-columns" >
-        <div class="card" style="width: 18rem;" *ngFor="let devops of devops">
+        <div class="card animated fadeIn fast" style="width: 18rem;" *ngFor="let devops of devops; let i = index">
             <img [src]="devops.img" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">{{devops.nombre}}</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <button type="button" class="btn btn-outline-primary btn-block">Ver más...</button>
+                <button type="button" class="btn btn-outline-primary btn-block" [routerLink]="['/dev',i]">Ver más...</button>
             </div>
         </div>
     </div>
