@@ -1,26 +1,22 @@
 
 
 <div class="container">
-    <h1 class="display-4 animated fadeIn fast"><small>DevOps</small></h1>
-    <hr>
-    <p class="lead animated fadeIn">
-        DevOps es una metodología y un conjunto de prácticas que busca integrar 
-        de manera colaborativa los equipos de desarrollo de software (Dev) con 
-        los equipos de operaciones y sistemas (Ops). El objetivo principal de DevOps 
-        es mejorar la eficiencia, la calidad y la velocidad en la entrega de software al 
-        mercado, al mismo tiempo que se garantiza la estabilidad y confiabilidad de los sistemas.
-    </p>
-
+    <h1 class="display-3 animated fadeIn fast">Metodologías ágiles: DevOps</h1>
+    <br>
     <div class="row">
         <div class="col-md-6">
             <p class="lead animated fadeIn">
-                DevOps, como filosofía y conjunto de prácticas adaptables a cada organización, 
-                ha revolucionado la forma en que las empresas desarrollan, entregan y mantienen 
-                aplicaciones y servicios. Promoviendo la colaboración entre equipos de desarrollo 
-                y operaciones, DevOps carece de una estructura de pasos fija. Sin embargo, se 
-                destacan principios y áreas clave que pueden agruparse en fases. A continuación, 
-                exploraremos los elementos esenciales de DevOps y delinearemos los pasos que suelen 
-                seguir las organizaciones para implementar con éxito esta metodología en sus procesos.
+                Es un conglomerado de herramientas y practicas que imparten una filosofía que más 
+                allá de optimizar estrategias de desarrollo en las empresas, se usa para automatizar 
+                e integrar al equipo de desarrolladores. Tiene especialidad en empoderar a los equipos
+                y esparcir un mensaje de colaboración y comunicación fluida. 
+
+                Los objetivos de DevOps se centran en CAMS (cultura, automatización, medición y uso compartido) 
+                esto ayuda a tener tareas más optimizadas y colaborativas al automatizar acciones que antes
+                eran manuales.
+
+                El modelo hace uso de  una cadena de 8 herramientas que sustentan la idea de optimizar las tareas
+                y mejorar el rendimiento en el equipo de trabajo, acontinuación se desglozaran cada una de ellas:
             </p> 
         </div>
         <div class="col-md-6">
@@ -32,7 +28,30 @@
         <hr>
     </div>
     <hr>
+    <h2 class="display-4 animated fadeIn fast"> Procesos</h2>
+    <hr>
     <div class="card-columns" >
         <app-tarjeta [devops]="devops" [index]="i" *ngFor="let devops of devops; let i = index"></app-tarjeta>
+    </div>
+    <hr>
+    <h2 class="display-4 animated fadeIn fast"> Aplicación</h2>
+    <hr>
+    <div style="margin-left: 2.5%;">
+    <div class="card mb-3" style="max-width: 1000px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="./assets/img/pageweb.png" class="imagenweb">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+            <h5 class="card-title">DevOps Web</h5>
+              <p class="card-text"> Para efectos más practicos y de mayor ejemplificación se aplica algunas de las prácticas 
+                fundamentales de desarrollo y colaboración de la metodología DevOps, se da vida a la página 
+                web actual.</p>
+              <p class="card-text"><small class="text-muted">Autores: Juan Gonzalez & Sebastian Murillo</small></p>
+                <a [routerLink]="['/aplication']" class="btn btn-outline-danger">Ver aplicación</a>
+            </div>
+        </div>
+    </div>
     </div>
 </div>

@@ -10,6 +10,7 @@ import { AboutComponent } from './components/about/about.component';
 import { DevopsService } from "./services/devops.service";
 import { DevComponent } from './components/dev/dev.component';
 import { TarjetaComponent } from './components/tarjeta/tarjeta.component';
+import { AplicationComponent } from './components/aplication/aplication.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TarjetaComponent } from './components/tarjeta/tarjeta.component';
     HomeComponent,
     AboutComponent,
     DevComponent,
-    TarjetaComponent
+    TarjetaComponent,
+    AplicationComponent
   ],
   imports: [
     BrowserModule,
